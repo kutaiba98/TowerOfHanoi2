@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Tower of Hanoi</title>
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <h1>Tower of Hanoi</h1>
+            <div class="menu">
+                <button class="btn" id="inc-plt" onclick="increasePlates()">Increase Plates</button>
+                <button class="btn" id="dec-plt" onclick="decreasePlates()">Decrease Plates</button>
+                <button class="btn" id="undo" onclick="undo_mtd()">Undo</button>
+                <button class="btn" id="redo" onclick="redo_mtd()">Redo</button>
+                <button class="btn" id="reset" onclick="reset()">Reset</button>
+            </div>
+            <div class="board">
+                <div class="pole" id="pole-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="pole" id="pole-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="pole" id="pole-3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="ground"></div>
+            <hr width="800px" size = "5px" noshade="" color="hsl(59, 49%, 44%)">
+            <h3 id="timer">Time Left = ??</h3>
+            <hr width="800px" size = "5px" noshade="" color="hsl(59, 49%, 44%)">
+            <h3 id="moves">Moves = ??</h3>
+        </div>     
+    </div>
+    <script src="main.js"></script>
+</body>
+</html> 
